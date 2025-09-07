@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="./public/preview.jpeg" alt="FashionHaul Logo" width="400" height="auto" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px 0;"/>
+<img src="./public/preview.jpeg" alt="FashionHaul Logo" width="100%" height="auto" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px 0; max-width: 1200px;"/>
 
 <!-- 
 For GitHub visibility, use one of these formats:
