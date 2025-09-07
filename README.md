@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![FashionHaul Logo](public/placeholder.svg)
+![FashionHaul Logo](public/preview.jpeg)
 *Experience the future of fashion with AI-powered virtual try-on technology*
 
 [![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react)](https://reactjs.org/)
