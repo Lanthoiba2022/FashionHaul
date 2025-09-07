@@ -2,14 +2,24 @@
 
 <div align="center">
 
-![FashionHaul Logo](public/preview.jpeg)
-*Experience the future of fashion with AI-powered virtual try-on technology*
+<img src="public/preview.jpeg" alt="FashionHaul Logo" width="400" height="auto" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px 0;"/>
 
-[![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.4.19-646CFF?logo=vite)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.17-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?logo=google)](https://ai.google.dev/)
+### *Experience the future of fashion with AI-powered virtual try-on technology*
+
+<br>
+
+[![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.4.19-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.17-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
+
+<br>
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-FF6B6B?style=for-the-badge&logoColor=white)](https://fashionhaul-demo.vercel.app)
+[![Documentation](https://img.shields.io/badge/📚_Documentation-4ECDC4?style=for-the-badge&logoColor=white)](#documentation)
+[![API Reference](https://img.shields.io/badge/🔧_API_Reference-45B7D1?style=for-the-badge&logoColor=white)](#api-reference)
+[![Contributing](https://img.shields.io/badge/🤝_Contributing-96CEB4?style=for-the-badge&logoColor=white)](#contributing)
 
 </div>
 
@@ -17,14 +27,44 @@
 
 FashionHaul is a cutting-edge virtual try-on application that leverages Google's Gemini 2.5 Flash AI to create realistic fashion experiences. Upload your photo, select from our curated clothing catalog, and see yourself in stunning AI-generated outfits with professional-quality results.
 
+<div align="center">
+
+### 🎯 **Transform Your Fashion Experience with AI**
+
+*Upload • Select • Try-On • Stylize*
+
+</div>
+
 ### ✨ Key Features
 
-- **🎭 AI-Powered Model Generation**: Transform your photos into professional 2D models with transparent backgrounds
-- **👗 Comprehensive Clothing Catalog**: Organized collections of tops, bottoms, shoes, and accessories
-- **🎨 Drag & Drop Interface**: Intuitive preview system with floating garment placement
-- **🤖 Advanced AI Processing**: Powered by Google Gemini 2.5 Flash for realistic virtual try-ons
-- **📱 Responsive Design**: Seamless experience across all devices
-- **⚡ Real-time Preview**: Instant visual feedback with zoom and scale controls
+<table>
+<tr>
+<td width="50%">
+
+**🎭 AI-Powered Model Generation**  
+Transform your photos into professional 2D models with transparent backgrounds
+
+**👗 Comprehensive Clothing Catalog**  
+Organized collections of tops, bottoms, shoes, and accessories
+
+**🎨 Drag & Drop Interface**  
+Intuitive preview system with floating garment placement
+
+</td>
+<td width="50%">
+
+**🤖 Advanced AI Processing**  
+Powered by Google Gemini 2.5 Flash for realistic virtual try-ons
+
+**📱 Responsive Design**  
+Seamless experience across all devices
+
+**⚡ Real-time Preview**  
+Instant visual feedback with zoom and scale controls
+
+</td>
+</tr>
+</table>
 
 ## 🛠️ Tech Stack
 
@@ -125,28 +165,58 @@ fashionhaul/
 
 ## 🎯 Usage Guide
 
-### 1. Upload Your Photo
-- Click "Upload Model" in the Model Catalog
-- Ensure your photo shows a clear face and full body (head to toe)
-- The system will validate image quality automatically
+<div align="center">
 
-### 2. Process Your Model
-- Click "Make this model" to generate your 2D avatar
-- AI will extract your silhouette with transparent background
-- Your processed model appears in the preview area
+### **How It Works in 4 Simple Steps**
 
-### 3. Select Clothing Items
-- Browse the organized catalog:
-  - **Above Waist**: Tops, shirts, jackets, blouses
-  - **Below Waist**: Pants, skirts, shorts, trousers
-  - **Footwear**: Heels, boots, sandals, sneakers
-  - **Accessories**: Bags, jewelry, eyewear
+</div>
 
-### 4. Virtual Try-On
-- Drag items from the catalog to the preview area
-- Items appear as floating elements around your model
-- Click "Dress-Up Model" to generate the final result
-- Use zoom and scale controls to view details
+<table>
+<tr>
+<td width="25%" align="center">
+
+### 📸 **1. Upload Your Photo**
+Click "Upload Model" in the Model Catalog
+- Clear face and full body (head to toe)
+- Automatic image quality validation
+
+</td>
+<td width="25%" align="center">
+
+### 🎭 **2. Process Your Model**
+Click "Make this model" to generate your 2D avatar
+- AI extracts your silhouette
+- Transparent background creation
+- Preview area placement
+
+</td>
+<td width="25%" align="center">
+
+### 👗 **3. Select Clothing Items**
+Browse the organized catalog:
+- **Above Waist**: Tops, shirts, jackets
+- **Below Waist**: Pants, skirts, shorts
+- **Footwear**: Heels, boots, sandals
+- **Accessories**: Bags, jewelry, eyewear
+
+</td>
+<td width="25%" align="center">
+
+### ✨ **4. Virtual Try-On**
+Drag items to preview area
+- Floating garment placement
+- Click "Dress-Up Model"
+- Zoom and scale controls
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+*🎨 **See the magic happen with AI-powered fashion transformation!***
+
+</div>
 
 ## 🔧 API Reference
 
