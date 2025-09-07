@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 310 100% 60%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 310 100% 60%;
+
+    --radius: 0.75rem;
+    
+    /* Fashion App Custom Colors */
+    --fashion-pink: 330 81% 60%;
+    --fashion-purple: 270 91% 65%;
+    --fashion-blue: 217 91% 60%;
+    --fashion-teal: 173 58% 39%;
+    --fashion-orange: 25 95% 53%;
+    --fashion-green: 142 76% 36%;
+    --fashion-yellow: 48 96% 89%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--fashion-pink)), hsl(var(--fashion-purple)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--fashion-blue)), hsl(var(--fashion-teal)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--fashion-orange)), hsl(var(--fashion-pink)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--fashion-green)), hsl(var(--fashion-teal)));
+    
+    /* Shadows with brand colors */
+    --shadow-pink: 0 20px 50px -12px hsl(var(--fashion-pink) / 0.25);
+    --shadow-purple: 0 20px 50px -12px hsl(var(--fashion-purple) / 0.25);
+    --shadow-glow: 0 0 40px hsl(var(--fashion-pink) / 0.3);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .fashion-card {
+    @apply bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-4 transition-all duration-300 hover:shadow-fashion-pink hover:border-fashion-pink/30;
+  }
+  
+  .fashion-button {
+    @apply relative overflow-hidden rounded-xl px-6 py-3 font-medium transition-all duration-300 hover:scale-105 hover:shadow-glow;
+  }
+  
+  .fashion-button-primary {
+    @apply fashion-button bg-gradient-primary text-primary-foreground hover:opacity-90;
+  }
+  
+  .fashion-button-secondary {
+    @apply fashion-button bg-gradient-secondary text-primary-foreground hover:opacity-90;
+  }
+  
+  .fashion-button-accent {
+    @apply fashion-button bg-gradient-accent text-primary-foreground hover:opacity-90;
+  }
+  
+  .category-card {
+    @apply fashion-card cursor-pointer group hover:scale-[1.02] transition-transform duration-300;
+  }
+  
+  .drag-zone {
+    @apply border-2 border-dashed border-fashion-pink/30 rounded-xl p-8 text-center transition-colors duration-300 hover:border-fashion-pink/50 hover:bg-fashion-pink/5;
+  }
+}

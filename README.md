@@ -309,4 +309,3 @@ We welcome contributions! Please follow these steps:
 
 ---
 
-# FashionHaul
