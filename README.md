@@ -2,7 +2,14 @@
 
 <div align="center">
 
-<img src="public/preview.jpeg" alt="FashionHaul Logo" width="400" height="auto" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px 0;"/>
+<img src="./public/preview.jpeg" alt="FashionHaul Logo" width="400" height="auto" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px 0;"/>
+
+<!-- 
+For GitHub visibility, use one of these formats:
+1. Relative path (works if image is in repo): ./public/preview.jpeg
+2. GitHub raw URL: https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/public/preview.jpeg
+3. GitHub blob URL: https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/blob/main/public/preview.jpeg?raw=true
+-->
 
 ### *Experience the future of fashion with AI-powered virtual try-on technology*
 
@@ -15,11 +22,6 @@
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
 
 <br>
-
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-FF6B6B?style=for-the-badge&logoColor=white)](https://fashionhaul-demo.vercel.app)
-[![Documentation](https://img.shields.io/badge/📚_Documentation-4ECDC4?style=for-the-badge&logoColor=white)](#documentation)
-[![API Reference](https://img.shields.io/badge/🔧_API_Reference-45B7D1?style=for-the-badge&logoColor=white)](#api-reference)
-[![Contributing](https://img.shields.io/badge/🤝_Contributing-96CEB4?style=for-the-badge&logoColor=white)](#contributing)
 
 </div>
 
