@@ -35,18 +35,18 @@ export const FashionHaul = () => {
     // Tops & Shirts
     { id: 'top-1', name: 'Jacket', category: 'above-waist', image: '/Tops_Shirts/jacket.webp' },
     { id: 'top-2', name: 'Blouse', category: 'above-waist', image: '/Tops_Shirts/top2.webp' },
-    { id: 'top-3', name: 'T-Shirt', category: 'above-waist', image: '/Tops_Shirts/top3.webp' },
+    { id: 'top-3', name: 'Top', category: 'above-waist', image: '/Tops_Shirts/top3.webp' },
     { id: 'top-4', name: 'Women Top', category: 'above-waist', image: '/Tops_Shirts/womenTop.webp' },
     // Bottoms
     { id: 'bottom-1', name: 'Jeans', category: 'below-waist', image: '/Bottoms/bo1.webp' },
-    { id: 'bottom-2', name: 'Trousers', category: 'below-waist', image: '/Bottoms/bo3.webp' },
-    { id: 'bottom-3', name: 'Shorts', category: 'below-waist', image: '/Bottoms/bo4.webp' },
-    { id: 'bottom-4', name: 'Skirt', category: 'below-waist', image: '/Bottoms/skirt.webp' },
+    { id: 'bottom-2', name: 'Floral Skirt', category: 'below-waist', image: '/Bottoms/bo3.webp' },
+    { id: 'bottom-3', name: 'Pink Skirt', category: 'below-waist', image: '/Bottoms/bo4.webp' },
+    { id: 'bottom-4', name: 'Black Skirt', category: 'below-waist', image: '/Bottoms/skirt.webp' },
     // Footwear
     { id: 'shoe-1', name: 'Heels', category: 'shoes', image: '/Footwear/heels.webp' },
     { id: 'shoe-2', name: 'High Heels', category: 'shoes', image: '/Footwear/heels1.webp' },
     { id: 'shoe-3', name: 'Sandals', category: 'shoes', image: '/Footwear/heels2.webp' },
-    { id: 'shoe-4', name: 'Boots', category: 'shoes', image: '/Footwear/heels3.webp' },
+    { id: 'shoe-4', name: 'Heels', category: 'shoes', image: '/Footwear/heels3.webp' },
     // Accessories
     { id: 'acc-1', name: 'Handbag', category: 'accessories', image: '/Accessories/bag1.webp' },
     { id: 'acc-2', name: 'Purse', category: 'accessories', image: '/Accessories/purse.webp' },
