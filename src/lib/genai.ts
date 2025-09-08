@@ -1,7 +1,8 @@
+import { apiCall } from './api';
+
 export async function makeModelCutout(dataUrl: string): Promise<string> {
-  const res = await fetch('/api/cutout', {
+  const res = await apiCall('/cutout', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ image: dataUrl })
   });
   if (!res.ok) throw new Error('Cutout failed');
@@ -16,9 +17,8 @@ export async function generateDressUp(params: {
   background?: 'transparent' | 'white';
   size?: string;
 }): Promise<string> {
-  const res = await fetch('/api/generate', {
+  const res = await apiCall('/generate', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(params)
   });
   if (!res.ok) throw new Error('Generation failed');

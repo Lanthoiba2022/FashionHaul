@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     proxy: {
       "/api": {
-        target: "http://localhost:8787",
+        target: process.env.VITE_API_BASE_URL || "http://localhost:8787",
         changeOrigin: true,
         secure: false,
       },
@@ -20,5 +20,9 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  define: {
+    // Make environment variables available to the client
+    __API_BASE_URL__: JSON.stringify(process.env.VITE_API_BASE_URL || "/api"),
   },
 }));

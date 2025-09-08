@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: virtu-couture-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GOOGLE_GENAI_API_KEY
+        sync: false

@@ -4,6 +4,7 @@ import { ClothingCatalog } from "./ClothingCatalog";
 import { PreviewContainer } from "./PreviewContainer";
 import { Header } from "./Header";
 import { toast } from "sonner";
+import { generateDressUp } from "@/lib/genai";
 
 export interface ClothingItem {
   id: string;
@@ -208,20 +209,14 @@ OUTPUT REQUIREMENTS:
         promptLength: prompt.length
       });
 
-      const res = await fetch('/api/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          modelPng: modelImage,
-          garments: garmentBase64s.filter(Boolean),
-          prompt,
-          background: 'transparent',
-          size: '1024x1536'
-        })
+      const result = await generateDressUp({
+        modelPng: modelImage,
+        garments: garmentBase64s.filter(Boolean),
+        prompt,
+        background: 'transparent',
+        size: '1024x1536'
       });
-      if (!res.ok) throw new Error('Generation failed');
-      const data = await res.json();
-      setFinalImage(data.png);
+      setFinalImage(result);
       toast.success("Dress-up complete! Check the preview!");
     } catch (error) {
       toast.error("Failed to generate dress-up. Please try again.");
